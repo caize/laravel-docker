@@ -8,7 +8,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libgmp10 \
     libgmp-dev \
     libpq-dev \
-    mysql-server \
     mysql-client \
     zlib1g-dev \
     supervisor \
