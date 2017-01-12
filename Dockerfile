@@ -4,7 +4,7 @@ RUN a2enmod rewrite
 WORKDIR /var/www
 RUN apt-get update && apt-get install --no-install-recommends -y \
     git \
-    gd-devel \
+    gd-dev \
     cron \
     libgmp10 \
     libgmp-dev \
