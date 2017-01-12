@@ -18,7 +18,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     mbstring \
     mysql \
     pdo \
-    gd \
     pdo_mysql \
     pdo_pgsql \
     zip \
