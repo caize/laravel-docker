@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libgmp10 \
     libgmp-dev \
     libpq-dev \
+    libgd-dev \
     mysql-client \
     zlib1g-dev \
     supervisor \
@@ -19,6 +20,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     mbstring \
     mysql \
     pdo \
+    gd \
     pdo_mysql \
     pdo_pgsql \
     zip \
