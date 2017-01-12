@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     pdo_mysql \
     pdo_pgsql \
     zip \
+    gd \
     && pecl install spl_types \
     && docker-php-ext-enable spl_types \
     && apt-get -y autoremove && apt-get clean 
