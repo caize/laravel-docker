@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libgd-dev \
     mysql-client \
     zlib1g-dev \
+    libldap2-dev \
     supervisor \
     && ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h \
     && docker-php-ext-install -j$(nproc) \
@@ -22,6 +23,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     mysql \
     pdo \
     gd \
+    ldap \
     pdo_mysql \
     pdo_pgsql \
     zip \
