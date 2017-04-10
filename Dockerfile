@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libldap2-dev \
     supervisor \
     && ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h \
+    && docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ \
     && docker-php-ext-install -j$(nproc) \
     bcmath \
     gmp \
